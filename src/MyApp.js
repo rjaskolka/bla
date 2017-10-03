@@ -4,14 +4,14 @@ import styles from './styles';
 
 export default class MyApp extends Component {
   constructor (props) {
-	  super(props)
-	  this.state = {
-		  loggedIn: false
-	  }
+    super(props)
+      this.state = {
+        loggedIn: false
+      }
   }
-	componentWillMount() {
-		console.log(this.state.loggedIn)
-	}
+  componentWillMount() {
+    console.log(this.state.loggedIn)
+  }
 
   render() {
     return (
@@ -22,7 +22,8 @@ export default class MyApp extends Component {
       </View>
     );
   }
-	componentDidMount() {
-			console.log('Done mounting!')
-	}
+
+  componentDidMount() {
+    console.log('Done mounting!')
+  }
 }
