@@ -8,8 +8,7 @@ import styles from './styles';
 const Button = ({clickEvent, buttonText}) => {
     return (
       <TouchableHighlight style = {styles.button} 
-        onPress={clickEvent}
-        underlayColor='transparent'>
+        onPress={clickEvent}>
         <Text style= { styles.buttonText } >{buttonText}</Text>
       </TouchableHighlight>
     )
