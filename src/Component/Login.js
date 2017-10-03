@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Text, View, TouchableHighlight } from 'react-native';
+import { View } from 'react-native';
 import styles from './styles';
+import Button from './Button';
 
 export default class Login extends Component {
   constructor (props) {
@@ -33,9 +34,8 @@ export default class Login extends Component {
   render() {
     return (
       <View style= { styles.container } >
-      <TouchableHighlight style= { styles.button } onPress={this.buttonPressed}>
-          <Text style= { styles.buttonText } >{ this.state.buttonText}</Text>
-	</TouchableHighlight>
+	<Button buttonText = { this.state.buttonText } 
+                clickEvent= { this.buttonPressed } />	    
       </View>
     );
   }
