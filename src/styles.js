@@ -9,7 +9,15 @@ const styles = StyleSheet.create({
   },
   button: {
 	  width: 200,
-	  height: 40
+	  height: 40,
+	  backgroundColor: 'red'
+  },
+  buttonText: {
+	  color: '#fff',
+
+	  textAlign: 'center',
+	  fontWeight: '400',
+	  fontSize: 25,
   }
 });
 

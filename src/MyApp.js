@@ -3,18 +3,26 @@ import { Text, View, TouchableHighlight } from 'react-native';
 import styles from './styles';
 
 export default class MyApp extends Component {
+  constructor (props) {
+	  super(props)
+	  this.state = {
+		  loggedIn: false
+	  }
+  }
+	componentWillMount() {
+		console.log(this.state.loggedIn)
+	}
+
   render() {
     return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
-        <Text>Another line to check live updates</Text>
-        <Text>Bubla is here</Text>
-      <TouchableHighlight style={styles.button} >
-      <Text>Press to login</Text>
+      <View style= { styles.container } >
+      <TouchableHighlight style= { styles.button } >
+          <Text style= { styles.buttonText } >Press to login</Text>
 	</TouchableHighlight>
       </View>
     );
   }
+	componentDidMount() {
+			console.log('Done mounting!')
+	}
 }
