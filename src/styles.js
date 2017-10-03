@@ -7,6 +7,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  button: {
+	  width: 200,
+	  height: 40
+  }
 });
 
 export default styles
