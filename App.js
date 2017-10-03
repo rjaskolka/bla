@@ -1,5 +1,13 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
+
+class Greeting extends Component {
+  render() {
+    return (
+      <Text>Hello {this.props.name}!</Text>
+    );
+  }
+}
 
 export default class App extends React.Component {
   render() {
@@ -13,6 +21,8 @@ export default class App extends React.Component {
         <Text>Shake your phone to open the developer menu.</Text>
         <Text>Another line to check live updates</Text>
 	<Image source={pic} style={{width: 193, height: 110}}/>
+        <Greeting name='Bulba' />
+        <Greeting name='Bulba' />
       </View>
     );
   }
